@@ -1,6 +1,8 @@
 (function(scope){
-'use strict';
-var XMLHttpRequest = require("xhr2");
+    'use strict';
+
+    var XMLHttpRequest = require("xhr2");
+
 function F(arity, fun, wrapper) {
   wrapper.a = arity;
   wrapper.f = fun;
@@ -5710,7 +5712,7 @@ var $author$project$Test$All$suite = A2(
 						function ($) {
 							return $.value;
 						},
-						$justgook$elm_webdriver$WebDriver$Assert$equal('justgook/elm-webdriver')),
+						$justgook$elm_webdriver$WebDriver$Assert$equal('KNMI - Koninklijk Nederlands Meteorologisch Instituut')),
 					A2(
 						$elm$core$Task$andThen,
 						A2(
@@ -5723,9 +5725,9 @@ var $author$project$Test$All$suite = A2(
 							$elm$core$Task$andThen,
 							function (_v1) {
 								return element(
-									$justgook$elm_webdriver$WebDriver$Step$Element$css('h1'));
+									$justgook$elm_webdriver$WebDriver$Step$Element$css('title'));
 							},
-							url('https://github.com/justgook/elm-webdriver'))));
+							url('https://knmi.nl/home'))));
 			})
 		]));
 var $author$project$Main$validator = F2(

@@ -13,8 +13,8 @@ suite =
     describe "Web Page Navigate"
         [ test "star elm-webdriver" <|
             \{ url, element, attribute } ->
-                url "https://github.com/justgook/elm-webdriver"
-                    |> Task.andThen (\_ -> "h1" |> Selector.css |> element)
+                url "https://knmi.nl/home"
+                    |> Task.andThen (\_ -> "title" |> Selector.css |> element)
                     |> Task.andThen (.value >> attribute "innerText")
-                    |> Task.andThen (.value >> Assert.equal "justgook/elm-webdriver")
+                    |> Task.andThen (.value >> Assert.equal "KNMI - Koninklijk Nederlands Meteorologisch Instituut")
         ]
