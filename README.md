@@ -6,7 +6,7 @@ This is a personal test for Elm WebDriver.
 
 You will need to set up a selenium server, which is some JAVA jar.
 You can get the jar here: <https://www.selenium.dev/downloads/>
-You will have to install a chromedriver, geckodriver or a webdriver of your choice. By default this uses the chrome driver.
+You will have to install a chromedriver, geckodriver or a webdriver of your choice (using your package manager, brew/apt). By default this uses the chrome driver.
 
 You start the server like this:
 
