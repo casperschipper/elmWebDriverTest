@@ -8,11 +8,13 @@ You will need to set up a selenium server, which is some JAVA jar.
 You can get the jar here: <https://www.selenium.dev/downloads/>
 You will have to install a chromedriver, geckodriver or a webdriver of your choice. By default this uses the chrome driver.
 
-Make sure that the .jar webDriver is running on port 4444
+You start the server like this:
 
 `java -jar selenium-server-standalone-*.jar`
 
-Go to localhost:4444, go to the console, and create a session.
+It should automatically detect your installed webdriver(s).
+
+Go to localhost:4444, go to the console, and create a session with the browser of your choice.
 
 You will have to do an `npm install` for the node dependencies (XMLHttpRequest).
 
@@ -26,4 +28,5 @@ Then run:
 
 `node main.js`
 
-It will load knmi.nl in chrome and run some test. If it passes you see a green period <span style="color:green">.</span>, otherwise a red <span style="color:red">F</span>.
+It will load http://knmi.nl in chrome and a simple test on the <title> tag. 
+If it passes you see a green period <span style="color:green">.</span>, otherwise a red <span style="color:red">F</span>.
