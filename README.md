@@ -1,20 +1,22 @@
 # Elm WebDriver Test
 
-This is a test for elm Web Driver
+This is a personal test for Elm Web Driver. 
 
-# Required preperation steps
+# Preperation
 
-Make sure that the .jar webDriver is running on port :4444
+Make sure that the .jar webDriver is running on port 4444
 
 `java -jar selenium-server-standalone-*.jar`
 
 You can get the jar here: <https://www.selenium.dev/downloads/>
 
-You will have to install the chromedriver or geckodriver, by default this uses the chrome driver.
+You will have to install a chromedriver, geckodriver or a webdriver of your choice. By default this uses the chrome driver.
+
+Finally, do an `npm install` for the node dependencies.
 
 # Building and running
 
-Use the build.sh script to build (there is some XMLHttpRequest injection needed, since this is missing from Node.js).
+Use the build.sh script to build, this makes the elm code and injects the XMLHttpRequest, which is needed for Elm Webdriver, but not available in Node.js by default.
 
 `sh build.sh`
 
